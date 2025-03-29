@@ -12,6 +12,33 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            /* Custom Gradient for Header */
+            .bg-gradient-custom {
+                background: linear-gradient(145deg, #0d1117, #1b2530 60%, #2d3848);
+                color: white;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+                border-radius: 0 0 20px 20px;
+            }
+
+            /* Button Hover Effects */
+            .btn-primary:hover {
+                background-color: #0d6efd;
+                border-color: #0d6efd;
+                opacity: 0.9;
+            }
+
+            .btn-outline-light:hover {
+                background-color: #ffffff;
+                color: #0d1117;
+            }
+
+            /* Rounded Image for Better Aesthetics */
+            .header-img {
+                border-radius: 15px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            }
+        </style>
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
@@ -19,7 +46,9 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container px-5">
                     <a class="navbar-brand" href="index.html">SMS Logistics Inc.</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -38,8 +67,9 @@
                     </div>
                 </div>
             </nav>
-            <!-- Header-->
-            <header class="bg-dark py-5">
+            
+            <!-- Header with Gradient Background -->
+            <header class="bg-gradient-custom py-5">
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
@@ -53,7 +83,7 @@
                             </div>
                         </div>
                         <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
-                            <img class="img-fluid rounded-3 my-5" src="src/assets/indexvideo.gif" alt="Logistics Animation" />
+                            <img class="img-fluid header-img my-5" src="src/assets/indexvideo.gif" alt="Logistics Animation" />
                         </div>
                     </div>
                 </div>
